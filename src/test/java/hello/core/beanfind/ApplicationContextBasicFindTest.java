@@ -33,7 +33,7 @@ public class ApplicationContextBasicFindTest {
     @Test
     @DisplayName("구체 타입으로 조회")
     void findBeanByName2() {
-        //유연성이 떨어진다
+        //구체 타입으로 조회하면 변경 시 유연성이 떨어진다
         MemberService memberService = ac.getBean("memberService", MemberServiceImpl.class);
         assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
     }
