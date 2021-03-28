@@ -25,7 +25,7 @@ public class NetworkClient {
 
     //서비스 종료시 호출
     public void disconnect() {
-        System.out.println("close " + url);
+        System.out.println("close: " + url);
     }
 
     /*
