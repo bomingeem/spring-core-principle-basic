@@ -43,10 +43,11 @@ public class SingletonWithPrototypeTest1 {
     static class ClientBean {
 
         @Autowired
-        private Provider<PrototypeBean> prototypeBeanProvider;
+        private Provider<PrototypeBean> provider;
 
         public int logic() {
-            PrototypeBean prototypeBean = prototypeBeanProvider.get();
+            // provider.get()을 통해서 항상 새로운 프로토타입 빈이 생성되는 것을 확인
+            PrototypeBean prototypeBean = provider.get();
             prototypeBean.addCount();
             int count = prototypeBean.getCount();
             return count;
