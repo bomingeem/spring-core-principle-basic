@@ -18,11 +18,11 @@ public class AppConfig {
     //AppConfig 는 생성한 객체 인스턴스의 참조(레퍼런스)를 생성자를 통해서 주입(연결) 해준다
 
     //생성자 주입
-    @Bean
-    public MemberService memberService() {
-        System.out.println("call AppConfig.memberService");
-        return new MemberServiceImpl(memberRepository());
-    }
+//    @Bean
+//    public MemberService memberService() {
+//        System.out.println("call AppConfig.memberService");
+//        return new MemberServiceImpl(memberRepository());
+//    }
 
     @Bean
     public OrderService orderService() {
