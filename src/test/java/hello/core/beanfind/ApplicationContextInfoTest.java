@@ -1,5 +1,6 @@
 package hello.core.beanfind;
 
+
 import hello.core.AppConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,10 +14,8 @@ class ApplicationContextInfoTest {
     @Test
     @DisplayName("모든 빈 출력하기")
     void findAllBean() {
-        //ac.getBeanDefinitionNames(): 스프링에 등록된 모든 빈 이름을 조회한다
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
         for (String beanDefinitionName : beanDefinitionNames) {
-            //ac.getBean(): 빈 이름으로 빈 객체(인스턴스)를 조회한다
             Object bean = ac.getBean(beanDefinitionName);
             System.out.println("name = " + beanDefinitionName + " object = " + bean);
         }
@@ -35,7 +34,6 @@ class ApplicationContextInfoTest {
                 Object bean = ac.getBean(beanDefinitionName);
                 System.out.println("name = " + beanDefinitionName + " object = " + bean);
             }
-
         }
     }
 }
