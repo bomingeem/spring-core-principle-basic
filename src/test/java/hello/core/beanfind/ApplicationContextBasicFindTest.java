@@ -1,5 +1,6 @@
 package hello.core.beanfind;
 
+
 import hello.core.AppConfig;
 import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
@@ -33,16 +34,15 @@ public class ApplicationContextBasicFindTest {
     @Test
     @DisplayName("구체 타입으로 조회")
     void findBeanByName2() {
-        //구체 타입으로 조회하면 변경 시 유연성이 떨어진다
+        //구체 타입으로 조회할 시 유연성이 떨어진다: 인터페이스를 의존하는것이 아니기 때문
         MemberService memberService = ac.getBean("memberService", MemberServiceImpl.class);
         assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
     }
-
+    
     @Test
     @DisplayName("빈 이름으로 조회X")
     void findBeanByNameX() {
-        //ac.getBean("xxxxx", MemberService.class);
-        MemberService xxxxx = ac.getBean("xxxxx", MemberService.class);
+//        ac.getBean("xxxxx", MemberService.class);
         assertThrows(NoSuchBeanDefinitionException.class,
                 () -> ac.getBean("xxxxx", MemberService.class));
     }
