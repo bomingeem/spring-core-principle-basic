@@ -32,5 +32,6 @@ public class AutowiredTest {
         public void setNoBean3(Optional<Member> noBean3) {
             System.out.println("noBean3 = " + noBean3);
         }
+
     }
 }
