@@ -13,15 +13,17 @@
 
 ### JPA는 애플리케이션과 JDBD 사이에서 동작
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a875e402-5d51-4384-930d-9d05b1fb965d/Untitled.png)
+<img width="884" alt="1" src="https://user-images.githubusercontent.com/47099798/229522249-142588f8-0bce-4bb3-843f-2a94e07ce42c.png">
+
 
 ### JPA 동작 - 저장
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0c5b059b-88b2-40b1-99a1-9a5833f2ed31/Untitled.png)
+<img width="930" alt="2" src="https://user-images.githubusercontent.com/47099798/229522304-99ef5c36-8072-4fbe-8088-cb7aa34a7255.png">
 
 ### JPA 동작 - 조회
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdd08ee1-95b7-4992-a4d9-96d242fb256a/Untitled.png)
+<img width="923" alt="3" src="https://user-images.githubusercontent.com/47099798/229522348-a72eea75-6e93-4751-8692-3fe959fb660a.png">
+
 
 ### JPA 소개
 
